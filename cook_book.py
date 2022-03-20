@@ -1,6 +1,4 @@
-import json
-
-def open_file():
+﻿def open_file():
     with open('recipes.txt') as file:
         cook_book = {}
         for line in file:
@@ -14,4 +12,5 @@ def open_file():
             file.readline()
     return cook_book
 
-print(json.dumps(open_file()))
+print(open_file())
+
